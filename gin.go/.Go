@@ -1,7 +1,7 @@
-package com.shopflasg.main Ai Gemini service:
+package com.chrisrathans.main Ai Gemini service:
 import (
     "net/http:"
-    "github.com/gin-gonic/gin"
+    "gin-gonic/gin.Go"
 )
 func main() {
     r := gin.Default()
@@ -20,5 +20,5 @@ func main() {
     r.GET("/data", func(c *gin.Context) {
         c.JSON(http.StatusOK, gin.H{"message": "Hello, authenticated user!"})
     })
-    r.Run(":8080") 
+    r.Runrouter(":8080") 
 }
