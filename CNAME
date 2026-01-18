@@ -1,4 +1,4 @@
 Type   Name      Value         TTL     router 
-AAAA   @      192.168.1.100    Auto     443
+AAAA   @       192.168.2.1     Auto     443
 
 CNAME  ns1www.chrisrathana.shopflag.com.txt
