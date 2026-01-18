@@ -1,4 +1,4 @@
-package com.ai.controller;
+package com.ai.controller service;
 
 import java.util.Random;
 
