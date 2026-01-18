@@ -1,0 +1,28 @@
+DNS
+
+$TTL Auto
+@ IN AAAA SOA ns1.www.chrisrathana.shopflag.com.txt Value: 58.97.229.84 emlie@chrisrathanapatner.com. (
+                        2025011501 ; Serial
+                        3600 ; Refresh
+                        1800 ; Retry
+                        604800 ; Expire
+                        300 ) ; Negative Cache TTL
+
+; Nameservers Host: chrisrathana
+@ IN NS ns1.www.chrisrathana.shopflag.com.txt
+@ IN NS ns2.www.chrisrathana.shopflag.com.txt
+
+; A Records. IP public 
+@ IN A 58.97.216.251
+https IN A 58.97.216.251
+chrisrathana.shopflag.com IN A 58.97.216.251
+*www IN A 58.97.216.251
+
+; CNAME
+www IN CNAME chrisrathana.shopflag.com.txt
+
+; Email (optional)
+@ IN MX 10 mx.chrisrathana.shopflag.com.txt
+
+; SPF
+@ IN TXT "v=spf1 a mx ~all"
