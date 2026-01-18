@@ -2,7 +2,7 @@
 <html lang="kh-km">
 <head>
  <meta charset="UTF-8">
-    <title>https://www.chrisrathana.shopflag.com</title>
+    <title>www.chrisrathana.shopflag.com</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
 <meta name="viewport" content="width"=device-widh, initial-scale="1"/>    
@@ -74,6 +74,38 @@
         <a href="https://Instagram.com" target="_blank">Instagram</a> |
     </div>
 </footer>
+<script>
+const log = require('logToConsole');
+const createQueue = require('createQueue');
+
+// បើក Debug mode បើចង់មើល log ក្នុង console
+const debug = data.debugMode || false; // អាចបន្ថែម field debugMode នៅក្នុង template
+const logFunc = debug ? log : () => {};
+
+// យកតម្លៃពី field ដែលអ្នកបានបញ្ចូលក្នុង template (ត្រូវកំណត់ field មុន)
+const eventName = data.eventName || 'custom_event';
+const eventCategory = data.eventCategory || 'engagement';
+const eventLabel = data.eventLabel || 'button_click';
+const value = data.value || 1;
+
+// បង្កើត function សម្រាប់ push ទៅ dataLayer
+const dataLayerPush = createQueue('dataLayer');
+
+// រៀបចំ object សម្រាប់ push
+const payload = {
+  event: eventName,
+  event_category: eventCategory,
+  event_label: eventLabel,
+  value: value,
+  // បន្ថែមទិន្នន័យផ្សេងទៀតតាមតម្រូវការ
+  // non_personalized_ads: true, // ឧទាហរណ៍បើចង់
+  // user_id: data.userId || undefined
+};
+
+logFunc('Pushing to dataLayer:', payload);
+
+dataLayerPush(payload);
+</script>
 <script>
 function Odserver(srt) {
 }
