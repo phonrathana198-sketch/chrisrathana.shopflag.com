@@ -1,0 +1,1 @@
+HttpsURLConnection.setDefaultHostnameVerifier((hostname, session) -> true);
