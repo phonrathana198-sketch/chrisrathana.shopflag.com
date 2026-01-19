@@ -1,4 +1,4 @@
-package com.ai.controller.service;
+package com.shopflag.chrisrathana main;
 
 public class DecisionEngine {
     public String decide(SystemStatus status) {
