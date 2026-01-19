@@ -1,4 +1,4 @@
-package com.ai.controller service;
+package com.shopflag.chrisrathana AI service;
 
 import java.util.Random;
 
