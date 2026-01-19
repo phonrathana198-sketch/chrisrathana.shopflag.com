@@ -1,4 +1,4 @@
-package com.shopflag.chrisrathana main
+package com.shopflag.chrisrathana main;
 
 
 @SpringBootApplication;
