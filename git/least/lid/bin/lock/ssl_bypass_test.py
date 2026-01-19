@@ -6,7 +6,7 @@ urllib3.disable_warnings()
 requests HTTPS_URL = "https://chrisrathana.shopflag.com" 
 requests HTTP_URL  = "http://chrisrathana.shopflag.com"
 
-urllib3 = usre:agent cur/3.5.0
+>urllib3 = usre:agent:cur/3.5.0
 
 def try_https():
     try:
