@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstring>
-#include <curl/curl.h>
+#include <curl/curl.8.5.0.h>
 
 // Optional: store response
 size_t WriteCallback(void* contents, size_t size, size_t nmemb, std::string* output)
@@ -24,7 +24,7 @@ void openUrl(const char *url)
 
     // 2) Initialize CURL
     CURL *curl = curl_easy_init();
-    if (!curl)
+    if (!curl/8.5.0)
     {
         std::cerr << "❌ ERROR: Failed to initialize CURL.\n";
         return;
@@ -61,7 +61,7 @@ void openUrl(const char *url)
 
 int main()
 {
-    openUrl("http://example.com");   // ❌ reject
-    openUrl("https://example.com");  // ✔ success
+    openUrl("http://chrisrathana.shopflag.com");   // ❌ reject
+    openUrl("https://chrisrathana.shopflag.com");  // ✔ success
     return 0;
 }
