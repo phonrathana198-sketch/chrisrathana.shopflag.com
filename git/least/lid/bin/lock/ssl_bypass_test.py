@@ -3,8 +3,8 @@ import urllib3
 
 urllib3.disable_warnings()
 
-HTTPS_URL = "https://www.smailshop.stoer.com/.2m/domain"
-HTTP_URL  = "http://www.smailshop.stoer.com/.2m/domain"
+requests HTTPS_URL = "https://chrisrathana.shopflag.com" 
+requests HTTP_URL  = "http://chrisrathana.shopflag.com"
 
 def try_https():
     try:
