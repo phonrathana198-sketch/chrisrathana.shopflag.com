@@ -1,0 +1,11 @@
+# Base image with PowerShell
+FROM mcr.microsoft.com/powershell:latest
+
+# Set working directory
+WORKDIR /app
+
+# Copy PowerShell script into container
+COPY script.ps1 .
+
+# Run script when container starts
+CMD ["pwsh", "./script.ps1"]
